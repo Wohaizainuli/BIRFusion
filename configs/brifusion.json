@@ -1,0 +1,25 @@
+{
+  "model": {
+    "width": 16,
+    "condition_channels": 16,
+    "num_responses": 4,
+    "encoder_experts": 4,
+    "encoder_top_k": 2,
+    "fusion_top_k": 2,
+    "window_size": 4,
+    "use_response": true,
+    "use_reliability": true
+  },
+  "loss": {
+    "pixel": 20.0,
+    "gradient": 50.0,
+    "ssim": 10.0,
+    "restoration": 1.0,
+    "reliability": 1.0,
+    "ranking": 0.5,
+    "consistency": 2.0,
+    "balance": 0.01,
+    "reliability_tau": 0.1,
+    "exclusion_radius": 12
+  }
+}
